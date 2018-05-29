@@ -1,0 +1,64 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+body, html {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #424242;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+figure {
+  margin: 0px;
+}
+
+#flourish {
+  text-align: center;
+}
+
+#credits {
+  text-align: center;
+}
+
+#credits a {
+  display: inline-block;
+  padding: 1.5em;
+}
+
+@media screen and (min-width: 60em) {
+  article {
+    width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
