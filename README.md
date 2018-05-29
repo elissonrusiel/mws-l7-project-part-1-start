@@ -1,5 +1,11 @@
 # Responsive Images: Project Part 1 #
 
+## Install ##
+
+```bash
+npm install
+```
+
 ## Your Goals: ##
 
 * Make the images fit in their containers in the viewport.
