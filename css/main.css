@@ -11,6 +11,8 @@ Hint! You'll probably want to start by styling:
 I've left some boilerplate below for you.
 
 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body, html {
   margin: 0;
   padding: 0;
@@ -29,8 +31,20 @@ img, embed, object, video {
   max-width: 100%;
 }
 
-h1 {
-  text-align: center;
+header #logo {
+  width: 10%;
+  min-width: 60px;
+  max-width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 10vw;
+  vertical-align: middle;
+  margin: 0px;
 }
 
 p {
@@ -46,8 +60,13 @@ figure {
   text-align: center;
 }
 
+#social,
 #credits {
   text-align: center;
+}
+
+#social a {
+  margin: 5px;
 }
 
 #credits a {
@@ -56,9 +75,28 @@ figure {
 }
 
 @media screen and (min-width: 60em) {
-  article {
+  article,
+  header {
     width: 60em;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  header h1 {
+    line-height: 96px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  header #logo {
+    margin-left: calc((100vw - 60px) / 2);
+    text-align: center;
+    float: none;
+    display: block;
+  }
+
+  header h1 {
+    line-height: 60px;
+    text-align: center;
   }
 }
